@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Clock And Stopwatch">
+        <meta name="keywords" content="clock,stopwatch,time,online stopwatch">
+        <meta name="author" content="Arnab Khan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="clock-stopwatch.css">
+      </head>
+      <body>
+
+<!-- start of switch -->
+        <div class="switch">
+            <div class="clockon" onclick="clockon()">CLOCK</div>
+            <div class="stopwatchon" onclick="stopwatchon()">STOPWATCH</div>
+            <div class="bothon" onclick="bothon()">BOTH</div>
+        </div>
+<!-- end of switch -->
+ 
+<!-- start of clock -->
+        <div class="clock">
+            <div class="clocksquare">
+                <div class="clockcircle">
+                    <div class="clnum"><div class="clp">1</div></div>
+                    <div class="clnum"><div class="clp">2</div></div>
+                    <div class="clnum"><div class="clp">3</div></div>
+                    <div class="clnum"><div class="clp">4</div></div>
+                    <div class="clnum"><div class="clp">5</div></div>
+                    <div class="clnum"><div class="clp">6</div></div>
+                    <div class="clnum"><div class="clp">7</div></div>
+                    <div class="clnum"><div class="clp">8</div></div>
+                    <div class="clnum"><div class="clp">9</div></div>
+                    <div class="clnum"><div class="clp">10</div></div>
+                    <div class="clnum"><div class="clp">11</div></div>
+                    <div class="clnum"><div class="clp">12</div></div>
+
+                    <div class="sec"></div>
+                    <div class="min"></div>
+                    <div class="hr"></div>
+                </div>
+            </div>
+        </div>
+<!-- end of clock -->
+
+<!-- start of stopwatch -->
+    <div class="stopwatch">
+    <div class="startandstop" onclick="startandstop()">START</div>
+    <div class="continueandsplit" onclick="continueandsplit()">SPLIT</div>
+    <div class="maindisplay">0 : 00 : 00</div>
+    <div class="display"></div>
+</div>
+<!-- end of stopwatch -->
+
+<!-- javascript start  -->
+<script src="clock-stopwatch.js"> </script>
+<!-- javascript end  -->
+      </body>
+</html>

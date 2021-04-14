@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* start switch */
+.switch{
+    position: absolute;
+    background-color: bisque;
+    width: 80vw;
+    height: 6vh;
+    left: 10vw;
+    top: 1vh;
+    font-size: 1rem;
+}
+.clockon{
+    position: absolute;
+    width: 33%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stopwatchon{
+    position: absolute;
+    width: 33%;
+    height: 100%;
+    top: 0;
+    left: 33%;
+    border: 5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bothon{
+    position: absolute;
+    width: 34%;
+    height: 100%;
+    top: 0;
+    left: 66%;
+    border: 5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+}
+/* end switch  */
+
+/* start cloclk */
+.clocksquare{
+    background-color: rgb(61, 38, 85);
+    border-radius: 30%;
+}
+.clockcircle{
+    background-color: rgb(231, 206, 175);
+    border-radius: 50%;
+}
+.clock{
+    position: absolute;
+    background-color: cyan;
+    top: 8vh;
+    height: 92vh;
+    width: 50vw;
+}
+.clockcircle{
+    position: absolute;
+    border: 10px solid rgb(0, 0, 0);
+}
+.clnum{
+    background-color: aqua;
+    height: 6%;
+    width: 6%;
+    position: absolute;
+    left: 47%;
+    top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec{
+    position: absolute;
+    background-color: rgb(236, 43, 91);
+    height: 35%;
+    width: 2%;
+    top: 15%;
+    left: 49%;
+}
+.min{
+    position: absolute;
+    background-color: rgb(50, 37, 223);
+    height: 30%;
+    width: 3%;
+    top: 20%;
+    left: 48.5%;
+}
+.hr{
+    position: absolute;
+    background-color: rgb(8, 240, 58);
+    height: 25%;
+    width: 4%;
+    top: 25%;
+    left: 48%;
+}
+/* end clock  */
+
+/* start stopwatch  */
+.stopwatch{
+        position: absolute;
+        background-color: rgb(130, 211, 156);
+        top: 8vh;
+        left: 50vw;
+        height: 92vh;
+        width: 50vw;
+}
+.startandstop{
+        position: absolute;
+        background-color: green;
+        top: 10%;
+        left: 10%;
+        height: 30%;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 40%;
+        font-size: 1rem;
+    }
+.continueandsplit{
+    position: absolute;
+    background-color: yellow;
+    top: 50%;
+    left: 10%;
+    height: 30%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40%;
+    opacity: .2;
+    font-size: 1rem;
+}
+.display{
+    position: absolute;
+    background-color: rgb(230, 212, 231);
+    top: 15%;
+    left: 55%;
+    height: 80%;
+    width: 40%;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+.maindisplay{
+    position: absolute;
+    background-color: rgb(229, 231, 212);
+    top: 5%;
+    left: 55%;
+    height: 10%;
+    width: 40%;
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    white-space: nowrap;
+}
+/* end stopwtch  */
+
+
+
+
+
+/* start mobile responive  */
+@media only screen and (max-width:600px) {
+    html{
+        font-size: 16px;
+    }
+    /* start switch  */
+    
+    .switch{
+
+    }
+    .clockon{
+        left: 0;
+        width: 50%;
+        background-color: blueviolet;
+    }
+    .stopwatchon{
+        left: 50%;
+        width: 50%;
+    }
+    .bothon{
+        display: none;
+    }
+    /* end switch  */
+
+    /* start clock  */
+    .clock{
+        left: 0;
+        width: 100vw;
+    }
+    /* end clock  */
+
+    /* start stopwatch  */
+    .stopwatch{
+        display: none;
+        left: 0;
+        top: 9vh;
+        width: 100vw;
+        height: 91vh;
+    }
+    .startandstop{
+        left: 5%;
+        top: 3%;
+        height: 20%;
+    }
+    .continueandsplit{
+        top: 3%;
+        left: 55%;
+        height: 20%;
+    }
+    .maindisplay{
+        top: 26%;
+        width: 90%;
+        left: 5%;
+    }
+    .display{
+        top: 36%;
+        width: 90%;
+        left: 5%;
+        height: 64%;
+    }
+    /* ens stopwatch  */
+  
+}
+ /* end moble responsive */ 
+
+
+  /* start ipad responsive */ 
+  @media only screen and (max-width:1100px) and (min-width:600px){
+    html{
+        font-size: 30px;
+    }
+      /* start switch  */
+    .switch{
+
+    }
+    .clockon{
+        left: 0;
+        width: 50%;
+        background-color: blueviolet;
+    }
+    .stopwatchon{
+        left: 50%;
+        width: 50%;
+    }
+    .bothon{
+        display: none;
+    }
+    /* end switch  */
+
+     /* start clock  */
+     .clock{
+        left: 0;
+        width: 100vw;
+    }
+    /* end clock  */
+
+    /* start stopwatch  */
+    .stopwatch{
+        left: 0;
+        width: 100vw;
+        display: none;
+    }
+    .display{
+        font-size: 1.2rem;
+    }
+    .maindisplay{
+        font-size: 1.5rem;
+    }
+  }
+  /* end ipad responsive  */
+
+
+/* height responsive  */
+@media only screen and (max-height:600px) and (min-height:350px){
+    .switch{
+        top: 2vh;
+        height: 12vh;
+    }
+    .clock{
+        top: 16vh;
+        height: 150vh;
+    }
+    .stopwatch{
+        top: 16vh;
+        height: 150vh;
+    }
+}
+
+@media only screen and (max-height:350px) {
+    .switch{
+        top: 2vh;
+        height: 20vh;
+    }
+    .clock{
+        top: 24vh;
+        height: 150vh;
+    }
+    .stopwatch{
+        top: 24vh;
+        height: 150vh;
+    }
+}
